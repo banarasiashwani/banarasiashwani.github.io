@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Accounts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            padding-top: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 1.5em;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #FF5722;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .table-container {
+            margin-top: 30px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .summary-header {
+            font-size: 1.5em;
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Financial Accounts Overview</h1>
+
+    <h2>1. Assets</h2>
+    <p>Assets are resources owned by a business that have economic value and are expected to provide future benefits. They are classified as either Current Assets (short-term) or Non-Current Assets (long-term).</p>
+
+    <h3>Examples of Assets:</h3>
+    <h4>Current Assets:</h4>
+    <ul>
+        <li>Cash (e.g., RBL Bank, AXIS Bank)</li>
+        <li>Accounts Receivable (e.g., amounts owed by customers)</li>
+        <li>Inventory (e.g., goods for sale)</li>
+        <li>Prepaid Expenses (e.g., Prepaid Rent, Prepaid Insurance)</li>
+    </ul>
+
+    <h4>Non-Current Assets:</h4>
+    <ul>
+        <li>Fixed Assets (e.g., Equipment, Buildings)</li>
+        <li>Accumulated Depreciation (e.g., reduction in value of fixed assets)</li>
+        <li>Intangible Assets (e.g., patents, trademarks)</li>
+    </ul>
+
+    <h3>How Assets Work:</h3>
+    <ul>
+        <li>Assets are recorded on the Balance Sheet.</li>
+        <li>They have a debit balance (positive value).</li>
+    </ul>
+
+    <h2>2. Liabilities</h2>
+    <p>Liabilities are obligations or debts that a business owes to external parties. They are classified as either Current Liabilities (short-term) or Non-Current Liabilities (long-term).</p>
+
+    <h3>Examples of Liabilities:</h3>
+    <h4>Current Liabilities:</h4>
+    <ul>
+        <li>Accounts Payable (e.g., amounts owed to suppliers)</li>
+        <li>Sales Tax Payable (e.g., taxes collected from customers)</li>
+        <li>Accrued Expenses (e.g., Accrued Salaries & Wages)</li>
+        <li>Short-Term Loans</li>
+    </ul>
+
+    <h4>Non-Current Liabilities:</h4>
+    <ul>
+        <li>Long-Term Loans (e.g., Notes Payable)</li>
+        <li>Deferred Tax Liabilities</li>
+    </ul>
+
+    <h3>How Liabilities Work:</h3>
+    <ul>
+        <li>Liabilities are recorded on the Balance Sheet.</li>
+        <li>They have a credit balance (negative value).</li>
+    </ul>
+
+    <h2>3. Equity</h2>
+    <p>Equity represents the owner's claim on the assets of the business after all liabilities have been paid. It is also known as Shareholder's Equity or Owner's Equity.</p>
+
+    <h3>Examples of Equity:</h3>
+    <ul>
+        <li>Capital Stock (e.g., funds raised by issuing shares)</li>
+        <li>Retained Earnings (e.g., profits reinvested in the business)</li>
+        <li>Dividends (e.g., distributions to shareholders)</li>
+    </ul>
+
+    <h3>How Equity Works:</h3>
+    <ul>
+        <li>Equity is recorded on the Balance Sheet.</li>
+        <li>It has a credit balance (negative value).</li>
+    </ul>
+
+    <h2>4. Revenue</h2>
+    <p>Revenue represents the income earned by a business from its primary operations, such as selling goods or providing services. It is also called Income or Sales.</p>
+
+    <h3>Examples of Revenue:</h3>
+    <ul>
+        <li>Income from Services (e.g., consulting fees)</li>
+        <li>Product Sales (e.g., sales of goods)</li>
+        <li>Interest Income (e.g., earnings from investments)</li>
+        <li>Job Sales (e.g., revenue from completed projects)</li>
+    </ul>
+
+    <h3>How Revenue Works:</h3>
+    <ul>
+        <li>Revenue is recorded on the Income Statement.</li>
+        <li>It has a credit balance (negative value).</li>
+    </ul>
+
+    <h2>5. Expenses</h2>
+    <p>Expenses represent the costs incurred by a business to generate revenue. They are deducted from revenue to calculate net income.</p>
+
+    <h3>Examples of Expenses:</h3>
+    <ul>
+        <li>Cost of Goods Sold (e.g., Cost of Materials, Cost of Labour)</li>
+        <li>Operating Expenses (e.g., Rent Expense, Advertising Expense)</li>
+        <li>Payroll Expenses (e.g., Salaries Expense, Payroll Tax Expense)</li>
+        <li>Depreciation Expense (e.g., reduction in value of fixed assets)</li>
+        <li>Interest Expense (e.g., cost of borrowing money)</li>
+    </ul>
+
+    <h3>How Expenses Work:</h3>
+    <ul>
+        <li>Expenses are recorded on the Income Statement.</li>
+        <li>They have a debit balance (positive value).</li>
+    </ul>
+
+    <div class="summary-header">Summary of Account Types</div>
+    <table class="table-container">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Balance Type</th>
+                <th>Financial Statement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Assets</td>
+                <td>Resources owned by the business</td>
+                <td>Debit (+)</td>
+                <td>Balance Sheet</td>
+            </tr>
+            <tr>
+                <td>Liabilities</td>
+                <td>Obligations owed by the business</td>
+                <td>Credit (-)</td>
+                <td>Balance Sheet</td>
+            </tr>
+            <tr>
+                <td>Equity</td>
+                <td>Owner's claim on the business</td>
+                <td>Credit (-)</td>
+                <td>Balance Sheet</td>
+            </tr>
+            <tr>
+                <td>Revenue</td>
+                <td>Income earned from operations</td>
+                <td>Credit (-)</td>
+                <td>Income Statement</td>
+            </tr>
+            <tr>
+                <td>Expenses</td>
+                <td>Costs incurred to generate revenue</td>
+                <td>Debit (+)</td>
+                <td>Income Statement</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>How These Categories Work Together</h2>
+    <h3>Balance Sheet:</h3>
+    <p>Assets = Liabilities + Equity</p>
+    <p>This equation must always balance.</p>
+
+    <h3>Income Statement:</h3>
+    <p>Net Income = Revenue - Expenses</p>
+    <p>Net Income flows into the Equity section of the Balance Sheet.</p>
+
+</body>
+</html>
