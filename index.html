@@ -12,7 +12,7 @@
             padding: 0;
             background: #0a192f;
             color: #ccd6f6;
-            overflow: hidden;
+            overflow: auto; /* Allow scrolling */
         }
 
         /* Container for the Book Index */
@@ -56,7 +56,7 @@
 
         /* Background Animation */
         .background {
-            position: absolute;
+            position: fixed; /* Fix background to viewport */
             top: 0;
             left: 0;
             width: 100%;
@@ -113,20 +113,14 @@
             <li><a href="#">Chapter 15: </a></li>
             <li><a href="#">Chapter 16: </a></li>
             <li><a href="#">Chapter 17: </a></li>
-
-
-
-
-
-            
-            <li><a href="#chapter">Chapter N: Advanced Topics</a></li>
+            <li><a href="#">Chapter N: Advanced Topics</a></li>
         </ul>
     </div>
 
     <!-- JavaScript for Background Animation -->
     <script>
         const background = document.getElementById('background');
-        const symbols = ['π', '∞', 'Σ', '∫', '√', 'Δ', 'θ', 'λ', 'φ', 'ω'];
+        const symbols = ['BC', 'Navision', 'Finance', 'Production', 'ILE', 'COA', 'Payable', 'Recivable', 'Accounts', 'Assets'];
 
         function createSymbol() {
             const symbol = document.createElement('div');
