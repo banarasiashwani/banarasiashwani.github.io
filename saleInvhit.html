@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posted Sale Invoice Hits:-</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .example {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+        }
+        
+        .rupee {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accounting Entries (in Indian Rupees)</h1>
+
+    <!-- Section 1: Customer Account -->
+    <div class="section">
+        <h2>1. Customer Account (Accounts Receivable)</h2>
+        <p><strong>Debit:</strong> Customer Account (Accounts Receivable)</p>
+        <p><strong>Why:</strong> The customer owes the business money, increasing the asset (receivable).</p>
+        <p><strong>Credit:</strong> Sales Revenue Account</p>
+        <p><strong>Why:</strong> Revenue is earned from the sale, increasing equity.</p>
+        
+        <div class="example">
+            <h3>Example:</h3>
+            <p>If you invoice a customer for ₹1,000:</p>
+            <pre>Debit: Accounts Receivable (Customer)  ₹1,000  
+Credit: Sales Revenue                ₹1,000</pre>
+        </div>
+    </div>
+
+    <!-- Section 2: COGS & Inventory -->
+    <div class="section">
+        <h2>2. Cost of Goods Sold (COGS) & Inventory</h2>
+        <p><strong>Debit:</strong> Cost of Goods Sold (COGS)</p>
+        <p><strong>Why:</strong> The cost of inventory sold is recognized as an expense.</p>
+        <p><strong>Credit:</strong> Inventory Account</p>
+        <p><strong>Why:</strong> Inventory is reduced as goods are sold.</p>
+        
+        <div class="example">
+            <h3>Example:</h3>
+            <p>If the COGS for the sold item is ₹600:</p>
+            <pre>Debit: COGS           ₹600  
+Credit: Inventory      ₹600</pre>
+        </div>
+    </div>
+
+    <!-- Section 3: Tax Accounts -->
+    <div class="section">
+        <h2>3. Tax Accounts (GST/VAT/Sales Tax)</h2>
+        <p><strong>Debit:</strong> Accounts Receivable (Customer)</p>
+        <p><strong>Why:</strong> The customer is charged tax, increasing the receivable.</p>
+        <p><strong>Credit:</strong> Tax Payable Account (e.g., GST Payable)</p>
+        <p><strong>Why:</strong> The business owes the tax amount to the government (liability).</p>
+        
+        <div class="example">
+            <h3>Example:</h3>
+            <p>If the invoice includes 10% GST (₹100):</p>
+            <pre>Debit: Accounts Receivable  ₹100  
+Credit: GST Payable         ₹100</pre>
+        </div>
+    </div>
+
+    <!-- Section 4: Additional Charges -->
+    <div class="section">
+        <h2>4. Additional Charges</h2>
+        <h3>a) Freight Charges</h3>
+        <p><strong>Debit:</strong> Freight Expense Account</p>
+        <p><strong>Credit:</strong> Accounts Payable</p>
+        
+        <h3>b) Cash Discounts</h3>
+        <p><strong>Debit:</strong> Sales Discounts Account</p>
+        <p><strong>Credit:</strong> Accounts Receivable</p>
+        
+        <div class="example">
+            <h3>Example:</h3>
+            <p>If a ₹20 discount is offered:</p>
+            <pre>Debit: Sales Discounts      ₹20  
+Credit: Accounts Receivable ₹20</pre>
+        </div>
+    </div>
+
+    <!-- Full Example Section -->
+    <div class="section">
+        <h2>Full Example of Posted Sales Invoice</h2>
+        <p><strong>Invoice Details:</strong></p>
+        <ul>
+            <li>Sales Amount: ₹1,000</li>
+            <li>GST: ₹100 (10%)</li>
+            <li>COGS: ₹600</li>
+        </ul>
+        
+        <div class="example">
+            <h3>Entries:</h3>
+            <pre>1. Debit: Accounts Receivable       ₹1,100 (Sales + Tax)  
+   Credit: Sales Revenue            ₹1,000  
+   Credit: GST Payable              ₹100  
+
+2. Debit: COGS                      ₹600  
+   Credit: Inventory                ₹600</pre>
+        </div>
+    </div>
+
+    <!-- Summary Table -->
+    <div class="section">
+        <h2>Summary of Accounts Impacted</h2>
+        <table>
+            <tr>
+                <th>Account Type</th>
+                <th>Debit</th>
+                <th>Credit</th>
+            </tr>
+            <tr>
+                <td>Accounts Receivable</td>
+                <td>✔️ (Total Invoice Amt)</td>
+                <td>–</td>
+            </tr>
+            <tr>
+                <td>Sales Revenue</td>
+                <td>–</td>
+                <td>✔️ (Sales Value)</td>
+            </tr>
+            <tr>
+                <td>GST/VAT Payable</td>
+                <td>–</td>
+                <td>✔️ (Tax Amount)</td>
+            </tr>
+            <tr>
+                <td>COGS</td>
+                <td>✔️ (Cost of Inventory)</td>
+                <td>–</td>
+            </tr>
+            <tr>
+                <td>Inventory</td>
+                <td>–</td>
+                <td>✔️ (Cost of Inventory)</td>
+            </tr>
+            <tr>
+                <td>Sales Discounts</td>
+                <td>✔️ (If Discount Given)</td>
+                <td>–</td>
+            </tr>
+        </table>
+    </div
+
+
+</body>
+</html>
